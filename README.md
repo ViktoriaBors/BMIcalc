@@ -1,2 +1,2 @@
-# BMIcalc
+# BMICalc
  Simple BMI Calculator

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="basicStyle">
+        <div>
+            <h1>Simple BMI calculator</h1>
+            <p>BMI means Body mass index, it relates body weight to height.</p>
+        </div>
+        <form id="calculateBMIForm">
+            <div>
+                <label for="weightInKg">Your weight in kg</label>
+                <input type="text" min="1" id="weightInKg" required>
+            </div>
+            <div>
+                <label for="heightInCm">Your height in cm</label>
+                <input type="text" min="1"  id="heightInCm" required>
+            </div>
+        </form>
+        <!--button outside of form!! If its inside its wanna submit - the results hsown just for a milisec-->
+        <div>
+            <button id="submit">Calculate</button>
+            <button id="reset">Reset</button>
+        </div>
+    </main>
+    <div class="basicStyle" id="result"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
